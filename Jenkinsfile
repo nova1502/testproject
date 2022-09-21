@@ -1,13 +1,13 @@
 pipeline {
      agent any
      tools {
-         jdk "java-11"
+         jdk "java11"
      }
      stage {
          stage('Build') {
              steps {
-                 sh 'javac JavaExample.java'
-                 sh 'java JavaExample'
+                 sh 'javac hello.java'
+                 sh 'java hello'
              }
          }
      }
